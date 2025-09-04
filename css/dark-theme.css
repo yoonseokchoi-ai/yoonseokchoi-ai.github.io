@@ -1,0 +1,25 @@
+/* Dark theme */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark a {
+    color: #bb86fc;
+}
+
+body.dark .navbar-light .navbar-brand, body.dark .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+body.dark .home-section {
+    background-color: #121212;
+}
+
+body.dark .ul-papers .description .title, body.dark .ul-papers .description .authors, body.dark .ul-papers .description .venue {
+    color: #ffffff;
+}
+
+#theme-switcher {
+    cursor: pointer;
+}
