@@ -8,10 +8,6 @@ body.dark a {
     color: #bb86fc;
 }
 
-body.dark .navbar-light .navbar-brand, body.dark .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
 body.dark .home-section {
     background-color: #121212;
 }
@@ -22,4 +18,24 @@ body.dark .ul-papers .description .title, body.dark .ul-papers .description .aut
 
 #theme-switcher {
     cursor: pointer;
+}
+
+section#news ul li {
+  padding-left: 1.5cm;
+  text-indent: -1.5cm;
+}
+
+body.dark .navbar-light {
+    background-color: #121212;
+    border-color: #333;
+}
+
+body.dark .navbar-light .navbar-brand,
+body.dark .navbar-light .navbar-nav .nav-link,
+body.dark .navbar-light .navbar-nav .nav-link .fas {
+    color: #ffffff;
+}
+
+body.dark .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
