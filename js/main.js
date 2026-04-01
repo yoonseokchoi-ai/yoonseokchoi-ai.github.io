@@ -192,6 +192,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('footer-year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // ── Theme Toggle (Light/Dark) ──────────────────────────
+    const toggleButtons = document.querySelectorAll('.theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        toggleButtons.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (theme === 'dark') {
+                icon.className = 'fas fa-moon';
+            } else {
+                icon.className = 'fas fa-sun';
+            }
+        });
+    }
+
+    applyTheme(savedTheme);
+
+    toggleButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+    });
+
     // ── Initial calls ──────────────────────────────────────
     updateProgress();
     highlightNav();

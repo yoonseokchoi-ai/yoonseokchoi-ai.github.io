@@ -45,6 +45,38 @@
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ── Dark Mode ──────────────────────────────────────────── */
+[data-theme="dark"] {
+    --bg-primary: #121820;
+    --bg-secondary: #1a2230;
+    --bg-card: rgba(26, 34, 48, 0.9);
+    --bg-glass: rgba(18, 24, 32, 0.7);
+    --bg-hover: rgba(74, 115, 165, 0.1);
+    --bg-sidebar: #161e2a;
+
+    --text-primary: #e0e6ed;
+    --text-secondary: #9aa8b8;
+    --text-muted: #5e6e80;
+
+    --accent: #6b9ad4;
+    --accent-hover: #8bb4e8;
+    --accent-glow: rgba(107, 154, 212, 0.08);
+    --accent-gradient: linear-gradient(135deg, #6b9ad4, #8bb4e8);
+
+    --highlight: #e8886b;
+    --success: #6aab8a;
+    --tag-bg: rgba(107, 154, 212, 0.1);
+    --tag-border: rgba(107, 154, 212, 0.2);
+
+    --border-color: rgba(100, 120, 150, 0.3);
+    --border-strong: rgba(100, 120, 150, 0.5);
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 30px rgba(107, 154, 212, 0.05);
+}
+
 /* ── Reset & Base ───────────────────────────────────────── */
 *,
 *::before,
@@ -67,6 +99,52 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition);
+    margin-bottom: 12px;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-glow);
+}
+
+.mobile-header-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mobile-header-right .theme-toggle {
+    margin-bottom: 0;
+}
+
+/* Smooth color transitions for theme switch */
+body,
+.sidebar,
+.pub-card,
+.award-pill,
+.status-badge,
+.filter-tab,
+.back-to-top,
+.mobile-header,
+footer {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 ::selection {
