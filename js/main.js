@@ -8,6 +8,11 @@ if ('scrollRestoration' in history) {
 }
 window.scrollTo(0, 0);
 
+// Also reset after full page load (fonts, images, etc.)
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ── Scroll Progress Bar ────────────────────────────────
