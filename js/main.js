@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   Interactive Academic Site — Main JavaScript (Enhanced)
+   Interactive Academic Site — Main JavaScript
    ═══════════════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── Typing Animation (smoother cursor) ─────────────────
+    // ── Typing Animation ───────────────────────────────────
     const typedEl = document.querySelector('.typed-text');
     if (typedEl) {
         const phrases = [
@@ -110,33 +110,33 @@ document.addEventListener('DOMContentLoaded', () => {
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
-        let delay = 70;
+        let delay = 80;
 
         function typeLoop() {
             const current = phrases[phraseIndex];
             if (isDeleting) {
                 typedEl.textContent = current.substring(0, charIndex - 1);
                 charIndex--;
-                delay = 35;
+                delay = 40;
             } else {
                 typedEl.textContent = current.substring(0, charIndex + 1);
                 charIndex++;
-                delay = 70 + Math.random() * 30; // slight randomness for natural feel
+                delay = 80;
             }
 
             if (!isDeleting && charIndex === current.length) {
-                delay = 2500;
+                delay = 2200;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 phraseIndex = (phraseIndex + 1) % phrases.length;
-                delay = 500;
+                delay = 400;
             }
 
             setTimeout(typeLoop, delay);
         }
 
-        setTimeout(typeLoop, 800);
+        setTimeout(typeLoop, 1000);
     }
 
     // ── Publication Filtering ──────────────────────────────
@@ -149,9 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
             tab.classList.add('active');
             const filter = tab.dataset.filter;
 
-            pubCards.forEach((card, index) => {
-                const match = filter === 'all' || card.dataset.venue === filter;
-                if (match) {
+            pubCards.forEach(card => {
+                if (filter === 'all' || card.dataset.venue === filter) {
                     card.classList.remove('hidden');
                     card.style.opacity = '0';
                     card.style.transform = 'translateY(10px)';
@@ -159,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         card.style.opacity = '1';
                         card.style.transform = 'translateY(0)';
                         card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                    }, index * 60);
+                    }, 50);
                 } else {
                     card.classList.add('hidden');
                 }
