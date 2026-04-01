@@ -1,535 +1,394 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yoonseok Choi — PhD Student researching Medical Image Analysis and Computer Vision.">
+    <meta name="author" content="Yoonseok Choi">
+    <meta name="google-site-verification" content="LkrHiygbObVdaVs1sXKKlnrbwoynAnCDzib4pvh3k9Y" />
+    <title>Yoonseok Choi</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
-  <meta name="google-site-verification" content="LkrHiygbObVdaVs1sXKKlnrbwoynAnCDzib4pvh3k9Y" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/academic.css">
 
-  <meta name="author" content="Yoonseok Choi">
-  <meta name="description" content="PhD Student">
-  <link rel="alternate" hreflang="en-us" href="/">
-  <meta name="theme-color" content="#2962ff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  <link rel="stylesheet" href="./css/academic.css">
-  <link rel="stylesheet" href="./css/dark-theme.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-  <link rel="alternate" href="./index.xml" type="application/rss+xml" title="Yoonseok Choi">
-  <link rel="manifest" href="./index.webmanifest">
-
-
-  <link rel="canonical" href="/">
-  <meta property="twitter:card" content="summary">
-  <meta property="og:site_name" content="Yoonseok Choi">
-  <meta property="og:url" content="/">
-  <meta property="og:title" content="Yoonseok Choi">
-  <meta property="og:description" content="PhD Student"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "/"
-}
-</script>
-  <title>Yoonseok Choi</title>
-
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+<body>
 
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="./">Yoonseok Choi</a>
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <a href="#" class="logo">YC.</a>
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
+
+    <div class="page-wrapper">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-profile">
+                <img src="./authors/admin/profile_cvpr.jpg" alt="Yoonseok Choi" class="profile-img">
+                <h1 class="sidebar-name">Yoonseok Choi</h1>
+                <p class="sidebar-title">PhD Student</p>
+                <p class="sidebar-affiliation">MILab, Yonsei University</p>
+            </div>
+
+            <p class="sidebar-interests">
+                Researching <span class="typed-text">Missing Modality in MRI</span>
+            </p>
+
+            <div class="sidebar-social">
+                <a href="https://github.com/yoonseokchoi-ai" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yoonseok-choi/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/yoonseokchoi__" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+                <a href="mailto:yoonseokchoi@yonsei.ac.kr" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="sidebar-buttons">
+                <a href="cv/cv_yoonseokchoi_2026_3_24.pdf" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-file-alt"></i> Curriculum Vitae
+                </a>
+                <a href="https://scholar.google.com/citations?user=Z8jo1ZUAAAAJ&hl=ko&oi=ao" class="btn btn-outline" target="_blank">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#about">About</a>
+                <a href="#news">Latest News</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#activities">Academic Activities</a>
+                <a href="#awards">Awards</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-section-title">Education</h3>
+                <ul class="sidebar-edu-list">
+                    <li class="sidebar-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="sidebar-edu-info">
+                            <strong>Ph.D. in Electrical and Electronic Engineering</strong>
+                            <span>Yonsei University, Seoul</span>
+                            <div class="edu-years">2023 – Present</div>
+                        </div>
+                    </li>
+                    <li class="sidebar-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="sidebar-edu-info">
+                            <strong>M.S. in Electrical and Electronic Engineering</strong>
+                            <span>Yonsei University, Seoul</span>
+                            <div class="edu-years">2021 – 2023</div>
+                        </div>
+                    </li>
+                    <li class="sidebar-edu-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="sidebar-edu-info">
+                            <strong>B.S. in Biomedical Engineering</strong>
+                            <span>Yonsei University, Wonju</span>
+                            <div class="edu-years">2015 – 2021</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- About -->
+            <section id="about" class="about-section reveal">
+                <h2 class="about-heading">About Me</h2>
+                <p class="about-text">
+                    I am a Ph.D. student at <a href="https://www.yonsei.ac.kr/" target="_blank">Yonsei University</a>, advised by
+                    <a href="https://scholar.google.co.kr/citations?user=zE4cGg0AAAAJ&hl=ko&oi=ao" target="_blank">Prof. Dong-Hyun Kim</a>, in the
+                    <a href="https://kimchi.yonsei.ac.kr/default/00/01.php" target="_blank">Medical Imaging Artificial Intelligence Lab (MILAB)</a>.
+                    In 2025, I worked as a visiting student at the
+                    <a href="https://vllab.ucmerced.edu/" target="_blank">Vision and Learning Lab (VLLab), UC Merced</a>, under the supervision of
+                    <a href="https://faculty.ucmerced.edu/mhyang/" target="_blank">Prof. Ming-Hsuan Yang</a>,
+                    broadening my research into generative modeling and image reconstruction.
+                </p>
+                <p class="about-text">
+                    My research addresses the <b>missing modality problem</b> in MRI, where incomplete acquisitions are common in clinical practice yet severely limit downstream analysis. I develop methods that leverage knowledge distillation, generative modeling, and disentangled representation learning to enable reliable diagnosis from incomplete data. These techniques, learning from incomplete data and recovering missing information, apply broadly across computer vision. My wider interests include super-resolution, motion artifact correction, and segmentation in brain MRI.
+                </p>
+                <div class="about-contact">
+                    <span><i class="fas fa-map-marker-alt"></i> Seoul, Republic of Korea</span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:yoonseokchoi@yonsei.ac.kr">yoonseokchoi@yonsei.ac.kr</a></span>
+                </div>
+                <div class="status-badge seeking">
+                    <span class="status-dot"></span>
+                    Seeking Research Internship
+                </div>
+            </section>
+
+            <!-- News -->
+            <section id="news" class="section">
+                <div class="section-header reveal">
+                    <h2>Latest News</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="news-list stagger">
+                    <div class="news-row">
+                        <div class="news-date">Jul 2025</div>
+                        <div class="news-text">Our MICCAI 2025 paper <b>"TESLA"</b> has been selected for an <b style="color:#c05050;">Oral presentation (top 2.2%)</b></div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Jun 2025</div>
+                        <div class="news-text">One paper has been accepted to <b>MICCAI 2025</b>!</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Jan 2025</div>
+                        <div class="news-text">Visiting Student at the <b>UC Merced Vision and Learning Lab</b> supervised by <b>Prof. Ming-Hsuan Yang</b></div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Jan 2025</div>
+                        <div class="news-text">Yonsei Junior Convergence Research Group <b>1st place</b>, 1,500,000 won</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Nov 2024</div>
+                        <div class="news-text">Our research paper got a <b style="color:#c05050;">Best Trainee Scientific Awards Poster Presentation (Gold)</b> in ICMRI 2024!</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Jun 2024</div>
+                        <div class="news-text">One paper has been accepted to <b>MICCAI 2024</b>!</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Feb 2024</div>
+                        <div class="news-text">One paper has been accepted to <b>ISMRM 2024</b> as an <b style="color:#c05050;">Oral presentation</b>!</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Oct 2023</div>
+                        <div class="news-text">One paper has been accepted to <b>Computer Methods and Programs in Biomedicine</b> (IF = 6.1)</div>
+                    </div>
+                    <div class="news-row">
+                        <div class="news-date">Mar 2023</div>
+                        <div class="news-text">Joined MILab at Yonsei University for my PhD Program</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="section">
+                <div class="section-header reveal">
+                    <h2>Research Experience</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="timeline stagger">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2025 – Jan 2026</div>
+                        <div class="timeline-org">University of California at Merced, USA</div>
+                        <div class="timeline-role">Visiting Student Researcher, Vision and Learning Lab</div>
+                        <div class="timeline-detail">Advisor: <a href="https://faculty.ucmerced.edu/mhyang/" target="_blank">Prof. Ming-Hsuan Yang</a></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2023 – Present</div>
+                        <div class="timeline-org">Yonsei University, Seoul</div>
+                        <div class="timeline-role">Graduate Student Researcher, Medical Imaging AI Lab (MILAB)</div>
+                        <div class="timeline-detail">Advisor: <a href="https://scholar.google.co.kr/citations?user=zE4cGg0AAAAJ&hl=ko&oi=ao" target="_blank">Prof. Dong-Hyun Kim</a></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2021 – Feb 2023</div>
+                        <div class="timeline-org">Yonsei University, Seoul</div>
+                        <div class="timeline-role">Graduate Student Researcher, Medical Imaging AI Lab (MILAB)</div>
+                        <div class="timeline-detail">Advisor: Prof. Dong-Hyun Kim</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2020 – Feb 2021</div>
+                        <div class="timeline-org">Yonsei University, Seoul</div>
+                        <div class="timeline-role">Undergraduate Research Intern, Medical Imaging AI Lab (MILAB)</div>
+                        <div class="timeline-detail">Advisor: Prof. Dong-Hyun Kim</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2019 – Dec 2019</div>
+                        <div class="timeline-org">Yonsei University, Seoul</div>
+                        <div class="timeline-role">Undergraduate Research Intern, Signal Processing Lab</div>
+                        <div class="timeline-detail">Advisor: Prof. Young-Ro Yoon</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <section id="publications" class="section">
+                <div class="section-header reveal">
+                    <h2>Selected Publications</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="pub-grid stagger">
+
+                    <!-- DRIFT -->
+                    <article class="pub-card">
+                        <img src="papers/images/drift.png" alt="DRIFT" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>DRIFT: Difficulty-aware Rectified Flows for Through-plane MRI Super-Resolution</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">Under Review</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Yoonseok Choi</span>, Eun-Gyu Ha, Daniel Kim, Mohammed A. Al-masni, Ming-Hsuan Yang, and Dong-Hyun Kim</div>
+                            <div class="pub-links">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Halo -->
+                    <article class="pub-card">
+                        <img src="papers/images/halo.jpg" alt="Halo" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Controlling Motion Transfer in Diffusion Transformers via Attention Heads</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">Under Review</span>
+                            </div>
+                            <div class="pub-authors">Sunyoung Jung*, Jiwoo Park*, <span class="me">Yoonseok Choi</span>, Kyobin Choo, Ming-Hsuan Yang, and Seong Jae Hwang</div>
+                            <div class="pub-links">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TESLA -->
+                    <article class="pub-card">
+                        <img src="papers/images/miccai2025.jpg" alt="TESLA" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>TESLA: Test-time Reference-free Through-plane Super-resolution for Multi-contrast Brain MRI</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">MICCAI 2025</span>
+                                <span class="pub-venue-tag highlight">Oral (Top 2.2%)</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Yoonseok Choi</span>, Sunyoung Jung, Mohammed A. Al-masni, Ming-Hsuan Yang, and Dong-Hyun Kim</div>
+                            <div class="pub-links">
+                                <a href="https://papers.miccai.org/miccai-2025/paper/0343_paper.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                                <a href="https://yonsei-milab.github.io/tesla-miccai2025-webpage/" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MICCAI 2024 -->
+                    <article class="pub-card">
+                        <img src="papers/images/miccai2024.jpg" alt="MICCAI 2024" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>Deformation-Aware Segmentation Network Robust to Motion Artifacts for Brain Tissue Segmentation using Disentanglement Learning</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">MICCAI 2024</span>
+                            </div>
+                            <div class="pub-authors">Sunyoung Jung, <span class="me">Yoonseok Choi</span>, Mohammed A. Al-masni, Minyoung Jung, and Dong-hyun Kim</div>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-72114-4_21" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                                <a href="https://github.com/SunYJ-hxppy/Multi-Net" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CMPB -->
+                    <article class="pub-card">
+                        <img src="papers/images/cmpb.jpg" alt="CMPB" class="pub-card-img">
+                        <div class="pub-card-body">
+                            <h3>A single stage knowledge distillation network for brain tumor segmentation on limited MR image modalities</h3>
+                            <div class="pub-venue">
+                                <span class="pub-venue-tag">CMPB</span>
+                                <span style="font-size:0.78rem;color:var(--text-muted)">IF 6.1</span>
+                            </div>
+                            <div class="pub-authors"><span class="me">Yoonseok Choi</span>, Mohammed A. Al-masni, Kyu-Jin Jung, Roh-Eul Yoo, Seong-Yeong Lee, and Dong-Hyun Kim</div>
+                            <div class="pub-links">
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0169260723003097#fig0003" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Academic Activities -->
+            <section id="activities" class="section">
+                <div class="section-header reveal">
+                    <h2>Academic Activities</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="service-grid stagger">
+                    <div class="service-block">
+                        <h3 class="service-category">Conference Reviewer</h3>
+                        <div class="service-table">
+                            <div class="service-row">
+                                <span class="service-name">CVPR</span>
+                                <span class="service-years">2026</span>
+                            </div>
+                            <div class="service-row">
+                                <span class="service-name">MICCAI</span>
+                                <span class="service-years">2025</span>
+                            </div>
+                            <div class="service-row">
+                                <span class="service-name">ICCV</span>
+                                <span class="service-years">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section id="awards" class="section">
+                <div class="section-header reveal">
+                    <h2>Awards &amp; Honors</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="awards-list stagger">
+                    <div class="award-pill">
+                        <span class="award-name">Junior Convergence Research Group (1st place, 1,500,000 won)</span>
+                        <span class="award-detail">2025</span>
+                    </div>
+                    <div class="award-pill">
+                        <span class="award-name">BK21 FOUR Outstanding Graduate Students' International Joint Training (12 months, 26,000,000 won)</span>
+                        <span class="award-detail">2024</span>
+                    </div>
+                    <div class="award-pill">
+                        <span class="award-name">Junior Convergence Research Group (3rd place, 500,000 won)</span>
+                        <span class="award-detail">2023</span>
+                    </div>
+                    <div class="award-pill">
+                        <span class="award-name">Medical Image Processing Contest with Rayence (2nd place, 2,000,000 won)</span>
+                        <span class="award-detail">2022</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="contact">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">YC.</div>
+                        <div class="footer-copy">&copy; 2025 Yoonseok Choi</div>
+                    </div>
+                    <div class="footer-contact">
+                        C218, Engineering Hall 3<br>
+                        Yonsei University, Seoul, Republic of Korea<br>
+                        <a href="mailto:yoonseokchoi@yonsei.ac.kr">yoonseokchoi@yonsei.ac.kr</a>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
     </button>
 
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="./">Yoonseok Choi</a>
-    </div>
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
 
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content"> 
-      <ul class="navbar-nav d-md-inline-flex">
-        <li class="nav-item">
-          <a class="nav-link " href="./#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="./#papers" data-target="#papers"><span>Publications</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="./#activities" data-target="#activities"><span>Academic Activities</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="./#awards" data-target="#awards"><span>Awards &amp; Honors</span></a>
-        </li>
-
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="theme-switcher" href="#"><i class="far fa-sun"></i></a>
-      </li>
-
-    </ul>
-
-  </div>
-</nav>
-
-
-<span class="js-widget-page d-none"></span>
-
-<!-- About Me -->
-  <section id="about" class="home-section wg-about   " style="padding: 30px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-      <img class="avatar avatar-circle" src="/authors/admin/profile_cvpr.jpg" alt="Avatar">
-      <div class="portrait-title">
-        <h2>Yoonseok Choi</h2>
-        <h3>PhD Student</h3>
-        
-        <h3>
-          <a href="https://kimchi.yonsei.ac.kr/default/00/01.php" target="_blank" rel="noopener">
-          <span><b>MILab, Yonsei University</b></span>
-          </a>
-        </h3>
-      </div>
-
-      
-      <td>
-      <br>
-          <a href="cv/cv_yoonseokchoi_2026_3_24.pdf"><b>CV</b></a>
-        | <a href="https://scholar.google.com/citations?user=Z8jo1ZUAAAAJ&hl=ko&oi=ao"><b>Google Scholar</b></a>
-        | <a href="https://github.com/yoonseokchoi-ai" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        | <a href="https://www.linkedin.com/in/yoonseok-choi/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        | <a href="https://x.com/yoonseokchoi__" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-      <br>
-      <br>
-      </td>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-<br>
-<!-- <p> <strong>Hello, Welcome :)</strong></p> </p> -->
-<p>I am a Ph.D. student at Yonsei University, advised by
-<a href="https://scholar.google.co.kr/citations?user=zE4cGg0AAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener"><strong>Prof. Dong-Hyun Kim</strong></a>, in the
-<a href="https://kimchi.yonsei.ac.kr/default/00/01.php" target="_blank" rel="noopener"><strong>Medical Imaging Artificial Intelligence Lab (MILAB)</strong></a>. In 2025, I worked as a visiting student at the
-<a href="https://vllab.ucmerced.edu/" target="_blank" rel="noopener"><strong>Vision and Learning Lab (VLLab), UC Merced</strong></a>, under the supervision of
-<a href="https://faculty.ucmerced.edu/mhyang/" target="_blank" rel="noopener"><strong>Prof. Ming-Hsuan Yang</strong></a>, broadening my research into generative modeling and image reconstruction.</p>
-
-<p>My research addresses the <b>missing modality problem</b> in MRI, where incomplete acquisitions are common in clinical practice yet severely limit downstream analysis. I develop methods that leverage knowledge distillation, generative modeling, and disentangled representation learning to enable reliable diagnosis from incomplete data. These techniques, learning from incomplete data and recovering missing information, apply broadly across computer vision. My wider interests include super-resolution, motion artifact correction, and segmentation in brain MRI.</p>
-
-<p>I am currently seeking a <span style="color:#ff0000; font-weight:bold;">research internship opportunity</span> and welcome any inquiries!</p>
-
-    <div class="row">
-<!--Contact-->
-      <div class="col-md-6">
-        <h3>Contact</h3>
-        <ul class="ul-contact fa-ul">
-          <li>          
-            <i class="fa-li fas fa-envelope"></i>
-            <div class="description">
-              <p class="course">yoonseokchoi@yonsei.ac.kr</p>
-
-            </div>
-          </li>       
-          <li>          
-            <i class="fa-li fas fa-map-marker"></i>
-            <div class="description">
-              <p class="course">C218, Engineering Hall 3, Yonsei University, Seoul, Republic of Korea</p>
-            </div>
-          </li>       
-        </ul>        
-      </div>
-
-      <div class="col-md-6">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Electrical and Electronic Engineering, 2023 - Present</p>
-              <p class="institution">Yonsei University, Seoul</p>
-            </div>
-          </li>
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MS in Electrical and Electronic Engineering, 2021 - 2023</p>
-              <p class="institution">Yonsei University, Seoul</p>
-            </div>
-          </li>
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BS in Biomedical Engineering, 2015 - 2021</p>
-              <p class="institution">Yonsei University, Wonju</p>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-<!-- Recent News -->
-  <section id="news" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h3>Recent News&#127881;</h3>      
-    
-<!-- Recent News-->
-<ul>
-  <li>[Jul 2025] 🔥Our MICCAI2025 paper <b>"TESLA"</b> has been selected to an <span style="color:#ff0000; font-weight:bold;">Oral presentation (top 2.2%)</span></li>
-  <li>[Jun 2025] 🎉One paper has been accepted to <b>MICCAI 2025!</b></li>
-  <li>[Jan 2025] 📢Visiting Student at the <b>UC Merced Vision and Learning Lab</b> supervised by <b>Prof. Ming-Hsuan Yang</b> (2025.01.31 ~ 2026.01.31)</li>
-  <li>[Jan 2025] 🎉Yonsei Junior Convergence Research Group 1st place, 1,500,000 won</li>
-  <li>[Nov 2024] 🎉Our research paper got a <span style="color:#ff0000; font-weight:bold;">Best Trainee Scientific Awards Poster Presentation (Gold)</span> in ICMRI 2024!</li>
-  <li>[Jun 2024] 🎉One paper has been accepted to <b>MICCAI 2024</b>!</li>
-  <li>[Feb 2024] 🎉One paper has been accepted to <b>ISMRM 2024</b> as an <span style="color:#ff0000; font-weight:bold;">Oral presentation</span>!</li>
-  <li>[Oct 2023] 🎉One paper has been accepted to <b>Computer Methods and Programs in Biomedicine Journal</b> (Impact Factor = 6.1)</li>
-  <li>[Mar 2023] 🎓 Joined MILab at Yonsei University for my PhD Program.</li>
-
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-<!-- Research Experiences -->
-<section id="experience" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
-<div class="container">
-<div class.="row">
-    <div class="col-lg-12">
-    <h1>Research Experiences</h1>
-<ul>
-
-<li> <div style="float:left"><b>Vision and Learning Lab</b>, University of California at Merced, USA</div><div style="float:right">Feb 2025 - Jan 2026 </div> <br>
-    Visiting Student Researcher (Advisor: Ming-Hsuan Yang) <br>
-</li>
-<li> <div style="float:left"><b>Medical Imaging Artificial Intelligence Lab</b>, Yonsei University, Seoul</div><div style="float:right">Mar 2023 - Present </div> <br>
-    Graduate Student Researcher (Advisor: Dong-Hyun Kim) <br>
-</li>
-<li> <div style="float:left"><b>Medical Imaging Artificial Intelligence Lab</b>, Yonsei University, Seoul</div><div style="float:right">Mar 2021 - Feb 2023 </div> <br>
-    Graduate Student Researcher (Advisor: Dong-Hyun Kim) <br>
-</li>
- <li> <div style="float:left"><b>Medical Imaging Artificial Intelligence Lab</b>, Yonsei University, Seoul</div><div style="float:right">Jul 2020 - Feb 2021 </div> <br>
-    Undergraduate Research Intern (Advisor: Dong-Hyun Kim) <br>
-</li>
-  <li> <div style="float:left"><b>Signal Processing Lab</b>, Yonsei University, Seoul</div><div style="float:right">Mar 2019 - Dec 2019 </div> <br>
-    Undergraduate Research Intern (Advisor: Young-Ro Yoon) <br>
-</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-<!-- Publications -->
-  <section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-      
-<div class="row">
-  
-    <div class="col-lg-12">
-      <h1>Selected Publications</h1>
-    </div>
-    <div class="row">
-        <ul class="ul-papers">
-          <li>
-            <div class="img">
-              <img src="papers/images/drift.png" class="img-responsive" alt="" >
-            </div>
-            <div class="description">
-              <p class="title">DRIFT: Difficulty-aware Rectified Flows for Through-plane MRI Super-Resolution</p>
-              <p class="authors"><b>Yoonseok Choi</b>, Eun-Gyu Ha, Daniel Kim, Mohammed A. Al-masni, Ming-Hsuan Yang, and Dong-Hyun Kim</p>
-              <p class="venue"><i>Under Review</i></p>
-              <p class="resources">
-                [
-                  <!--<a href="">paper</a> | -->
-                  <!--<a href="">project</a>-->
-                  <!--<a href="">code</a>-->
-                ]
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="img">
-              <img src="papers/images/halo.jpg" class="img-responsive" alt="" >
-            </div>
-            <div class="description">
-              <p class="title">Controlling Motion Transfer in Diffusion Transformers via Attention Heads</p>
-              <p class="authors">Sunyoung Jung*, Jiwoo Park*, <b>Yoonseok Choi</b>, Kyobin Choo, Ming-Hsuan Yang, and Seong Jae Hwang</p>
-              <p class="venue"><i>Under Review</i></p>
-              <p class="resources">
-                [
-                  <!--<a href="">paper</a> | -->
-                  <!--<a href="">project</a>-->
-                  <!--<a href="">code</a>-->
-                ]
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="img">
-              <img src="papers/images/miccai2025.jpg" class="img-responsive" alt="" >
-            </div>
-            <div class="description">
-              <p class="title">TESLA: Test-time Reference-free Through-plane Super-resolution for Multi-contrast Brain MRI</p>
-              <p class="authors"><b>Yoonseok Choi</b>, Sunyoung Jung, Mohammed A. Al-masni, Ming-Hsuan Yang, and Dong-Hyun Kim</p>
-              <p class="venue"><i>MICCAI 2025, <span style="color:#ff0000; font-weight:bold;">Oral presentation (Top 2.2%)</span></i></p>
-              <p class="resources">
-                [
-                  <!--<a href="https://micv-yonsei.github.io/cass/">project</a> / -->
-                  <!-- <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Kim_EAGLE_Eigen_Aggregation_Learning_for_Object-Centric_Unsupervised_Semantic_Segmentation_CVPR_2024_paper.html">paper</a> / -->
-                  <a href="https://papers.miccai.org/miccai-2025/paper/0343_paper.pdf">paper</a> | 
-                  <a href="https://yonsei-milab.github.io/tesla-miccai2025-webpage/">project</a>
-                  <!--<a href="https://github.com/MICV-yonsei/PRETI">code</a>-->
-                ]
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="img">
-              <img src="papers/images/miccai2024.jpg" class="img-responsive" alt="" >
-            </div>
-            <div class="description">
-              <p class="title">Deformation-Aware Segmentation Network Robust to Motion Artifacts for Brain Tissue Segmentation using Disentanglement Learning</p>
-              <p class="authors">Sunyoung Jung, <b>Yoonseok Choi</b>, Mohammed A. Al-masni, Minyoung Jung, and Dong-hyun Kim</p>
-              <p class="venue"><i>MICCAI 2024</i></p>
-              <p class="resources">
-                [
-                  <!-- <a href="https://micv-yonsei.github.io/">project</a> / -->
-                  <!--<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Kim_EAGLE_Eigen_Aggregation_Learning_for_Object-Centric_Unsupervised_Semantic_Segmentation_CVPR_2024_paper.html">paper</a> / -->
-                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-72114-4_21">paper</a> | 
-                  <a href="https://github.com/SunYJ-hxppy/Multi-Net">code</a>
-                  <!-- <a href="">code</a> -->
-                ]
-              </p>
-            </div>
-          </li>
-                  <li>
-            <div class="img">
-              <img src="papers/images/cmpb.jpg" class="img-responsive" alt="" >
-            </div>
-            <div class="description">
-              <p class="title">A single stage knowledge distillation network for brain tumor segmentation on limited MR image modalities</p>
-              <p class="authors"><b>Yoonseok Choi</b>, Mohammed A. Al-masni, Kyu-Jin Jung, Roh-Eul Yoo, Seong-Yeong Lee, and Dong-Hyun Kim</p>
-              <!--<p class="authors"><span style="color:#dc143c">Short version at "3rd Workshop on Generative Models for Computer Vision" Workshop @ CVPR 2025</span></p>-->
-              <p class="venue"><i>Computer Methods and Programs in Biomedicine (CMPB), impact factor: 6.1</i></p>
-              <p class="resources">
-                [
-                  <a href="https://www.sciencedirect.com/science/article/pii/S0169260723003097#fig0003">paper</a>
-                ]
-              </p>
-            </div>
-          </li>
-          
-
-        </ul>      
-    </div>  
-</div>
-    </div>
-  </section>
-
-<!-- Academic Activities -->
-  <section id="activities" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h1>Academic Activities</h1>  
-<!--       <h2 id="reviewer">Organizing Committees</h2>
-      <ul>
-        <li> MICCAI Student Board - Local Student Liaison Officer
-          <ul>
-            <li>Organizing workshops, webinars, and conference events for MICCAI 2025</li>
-          </ul>
-        </li>
-      </ul> -->
-      <h2 id="reviewer">Reviewer</h2>
-      <ul>
-        <li> CVPR 2026</li>
-        <li> MICCAI 2025</li>
-        <li> ICCV 2025</li>
-      </ul>
-      
-
-    </div>
-</div>
-    </div>
-  </section>
-
-<!-- Awards & Honors -->
-<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h1>Awards &amp; Honors</h1>      
-      
-<ul>
-  <li> Cognitive and Biological Factors Related to the Development of Question-Asking Abilities in School-Aged Children, Junior Convergence Research Group (1st place, 1,500,000 won), 2025</li>
-  <li> BK21 FOUR (Brain Korea 21 Four) Project; Support Program for Outstanding Graduate Students' International Joint Training 1 year from the commencement of training (12months, 26,000,000 won), 2024</li>
-  <li> Structural brain correlates of foreign language proficiency and experiences, Junior Convergence Research Group (3rd place, 500,000 won), 2023</li>
-  <li> DSU-Net2D: Deep Supervision U-Net2D, Medical Image Processing Contest with Rayence and Yonsei University (2nd place, 2,000,000 won), 2022</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin.="anonymous"></script>
-    
-
-    <script>const code_highlighting = true;</script>
-    <script>const isSiteThemeDark = false;</script>
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
-
-
-  
-  <div class="container">
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-left">
-            <p class="copyright">© 2024 Yoonseok Choi</p>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
-
-  </div>
-  
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class.="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<script src="/js/theme-switcher.js"></script>
 </body>
+
 </html>
