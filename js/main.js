@@ -2,6 +2,12 @@
    Interactive Academic Site — Main JavaScript
    ═══════════════════════════════════════════════════════════ */
 
+// Prevent browser from restoring scroll position on refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ── Scroll Progress Bar ────────────────────────────────
