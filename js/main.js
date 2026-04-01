@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   Interactive Academic Site — Main JavaScript
+   Interactive Academic Site — Main JavaScript (Enhanced)
    ═══════════════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('active');
         });
 
-        // Close on nav link click (mobile)
         sidebar.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', () => {
                 sidebar.classList.remove('mobile-open');
@@ -99,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── Typing Animation ───────────────────────────────────
+    // ── Typing Animation (smoother cursor) ─────────────────
     const typedEl = document.querySelector('.typed-text');
     if (typedEl) {
         const phrases = [
@@ -111,34 +110,62 @@ document.addEventListener('DOMContentLoaded', () => {
         let phraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
-        let delay = 80;
+        let delay = 70;
 
         function typeLoop() {
             const current = phrases[phraseIndex];
             if (isDeleting) {
                 typedEl.textContent = current.substring(0, charIndex - 1);
                 charIndex--;
-                delay = 40;
+                delay = 35;
             } else {
                 typedEl.textContent = current.substring(0, charIndex + 1);
                 charIndex++;
-                delay = 80;
+                delay = 70 + Math.random() * 30; // slight randomness for natural feel
             }
 
             if (!isDeleting && charIndex === current.length) {
-                delay = 2200;
+                delay = 2500;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 phraseIndex = (phraseIndex + 1) % phrases.length;
-                delay = 400;
+                delay = 500;
             }
 
             setTimeout(typeLoop, delay);
         }
 
-        setTimeout(typeLoop, 1000);
+        setTimeout(typeLoop, 800);
     }
+
+    // ── Publication Filtering ──────────────────────────────
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const pubCards = document.querySelectorAll('.pub-card');
+
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const filter = tab.dataset.filter;
+
+            pubCards.forEach((card, index) => {
+                const match = filter === 'all' || card.dataset.venue === filter;
+                if (match) {
+                    card.classList.remove('hidden');
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                        card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                    }, index * 60);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
 
     // ── Smooth scroll for anchor links ─────────────────────
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
