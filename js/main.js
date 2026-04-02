@@ -8,6 +8,14 @@ if ('scrollRestoration' in history) {
 }
 window.scrollTo(0, 0);
 
+// Apply saved theme immediately (before paint) to prevent flash
+(function() {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+})();
+
 // Also reset after full page load (fonts, images, etc.)
 window.addEventListener('load', () => {
     window.scrollTo(0, 0);
