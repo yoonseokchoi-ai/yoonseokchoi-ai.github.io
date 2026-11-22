@@ -705,7 +705,8 @@ img {
 .pub-card-img {
     width: 100%;
     aspect-ratio: 16/10;
-    object-fit: cover;
+    object-fit: contain;
+    background: #fff;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
     transition: opacity var(--transition);
