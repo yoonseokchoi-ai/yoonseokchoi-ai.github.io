@@ -694,6 +694,10 @@ img {
     transform: translateY(-2px);
 }
 
+.pub-card.no-img {
+    grid-template-columns: 1fr;
+}
+
 .pub-card.hidden {
     display: none;
 }
